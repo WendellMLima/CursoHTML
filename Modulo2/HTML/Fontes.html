@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurando Fontes</title>
+    
+
+    <style>
+        @font-face {
+            /*importando fontes do site dafonte.com*/
+            font-family:"Witch Magic";
+            src: url('Witch Magic.otf') format(ontype), url('Witch Magic.ttf') format(truetype);
+
+            /*ontype = (otf)
+            truetype = (ttf)
+            embedeed-opentype 
+            truetype-aat
+            svg*/
+        }
+        /*Importand ofontes do google fontes*/
+        @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Luckiest+Guy&display=swap');
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*Medidas Absolutas
+            cm, mm, in, px, pt, pc
+            */
+
+            /*Medidas Relativas
+            em, ex, rem, vw, vh, %
+            */
+            font-size:1.5em ;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        h1, h2{
+            /*font-style -> font-weight -> font-size -> font-family resumo 
+            de estilização da fonte.*/
+            font:italic bold 1.9em fantasy;
+
+        }
+
+        .fonte1{
+            font-family:"Luckiest Guy", serif;
+        }
+
+        .externa{
+            font-family: "Bungee", serif;
+        }
+
+        .fonteexterna{
+            font-family:"Witch Magic";
+            color: rebeccapurple;
+            
+
+        }
+
+        /*Alinhando textos*/
+        .Alinhamento1{
+            text-align: center;
+        }
+
+        .Alinhamento2{
+            text-align: right;
+        }
+
+        .Alinhamento3{
+            text-align: justify; /*para alinhar na esquerda e na direita*/
+            text-indent: 40px; /*para colocar uma indetação no começo do texto*/
+            font-size: 18px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A praesentium id, modi illum maxime amet deleniti repellat excepturi nostrum laudantium? Dignissimos quo laudantium reiciendis provident aperiam at quas quasi impedit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit repudiandae laborum similique ipsa laboriosam? Cupiditate neque cum sint, vel iure facere. Fuga veniam quibusdam rem unde asperiores amet dicta recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias id ipsa quis odio itaque nobis quae vero sed facere necessitatibus. Ad debitis vitae placeat eligendi illum amet libero recusandae. Accusantium.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, mollitia voluptatem? Enim eum odit nisi minima sed, accusamus voluptas error mollitia aliquid doloremque possimus inventore molestias quo esse? Dignissimos, sequi.</p>
+    
+    <h2>Subtitulo do Exercicios</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium porro, labore in, deserunt asperiores tempora delectus harum quidem tenetur voluptatibus aliquam iusto vero reiciendis debitis? Perferendis ipsam delectus eos dolor. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias iure, tempora commodi repudiandae cum unde dolor perspiciatis alias dolorum odit minima tenetur veniam expedita tempore at ad minus distinctio eaque! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, voluptatum? Voluptates officia incidunt officiis praesentium repellat voluptate, aut magnam molestiae! Iste, asperiores veniam impedit nesciunt quia quo earum nulla. Numquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, quidem? Rem a at repudiandae molestias consectetur, nostrum mollitia cum et accusamus, provident officiis inventore ut, delectus numquam quos blanditiis vero?</p>
+
+    <h2 class="fonte1">Fontes Externas</h2>
+    <p class="externa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fuga velit, beatae quam asperiores fugiat quisquam architecto nulla accusamus ipsum debitis inventore consequatur, necessitatibus suscipit. Sed odit perspiciatis voluptatum pariatur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, culpa? Corrupti delectus ratione magnam amet atque id suscipit provident dicta repudiandae nemo aliquid voluptas quae sapiente quia, ullam error expedita? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod impedit ad quae illo modi inventore, sit suscipit voluptates? Quo ad suscipit reiciendis, ratione eius nesciunt ut est. Fugit, suscipit velit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sint obcaecati mollitia id harum ab qui doloremque, ducimus dicta similique nostrum sunt, quisquam odio enim amet, labore quam officia! Dolorem.</p>
+    
+    <h2 class="fonteexterna">Fonte Externas</h2>
+    <p class="fonteexterna">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex beatae quo nobis, officia ratione unde error labore laudantium neque quas, tenetur eaque ab officiis? Quas corporis ex minima hic possimus.</p>
+
+    <h1 class="Alinhamento1">Tipos de Alinhamentos</h1>
+    <h2 class="Alinhamento2">Alinhando Fontes</h2>
+    <p class="Alinhamento3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, distinctio veniam fugit consectetur consequatur provident. Iste odio obcaecati harum molestias ipsa autem earum vel quia necessitatibus, deleniti eius, repudiandae reprehenderit.</p>
+
+</body>
+</html>

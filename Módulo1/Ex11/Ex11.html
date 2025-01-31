@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audios em site</title>
+</head>
+<body>
+
+    <h1>reproduzindo audio</h1>
+    <audio src="Win The Battle Win The War - Everet Almond.mp3" controls autoplay></audio>
+    <!--MP3, WAV, OGG-->
+
+    <h2>outra maneira de colocar audio</h2>
+    <audio preload="metadata" autoplay controls loop> <!-- autoplay = para reproduzir autoomatico, controls = para colocar player de para tocar o audio
+        loop = para reproduzir novamente sozinho quando acabar o audio-->
+        <source src="Win The Battle Win The War - Everet Almond.mp3" type="audio/mpeg">
+        <source src="Win The Battle Win The War - Everet Almond.ogg" type="audio/ogg">
+        <source src="Win The Battle Win The War - Everet Almond.wav" type="audio/wav">
+        <p>infelizmente seu navegador não reproduz audio </p>
+
+        
+
+    </audio>
+</body>
+</html>

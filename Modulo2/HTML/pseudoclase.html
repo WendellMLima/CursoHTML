@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <style>
+
+        div{
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            display: inline-block;
+        }
+
+        div:hover{
+            background-color: gray;
+        }
+
+        #texto{
+            width: 300px;
+            height: 100px;
+            margin-top: 50px;
+            display: block;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        #texto > p{
+            display: none;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        /*Pseudoclasse*/
+        #texto:hover > p{
+            display: block;
+            color: aliceblue;
+            background-color: red;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        a:active{
+            color: yellow;
+        }
+        /*Pseudoelemento*/
+        a::after{
+            content: ' (link)';
+            color: red;
+        }
+
+        a::before{
+            content: '=> ';
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    
+    <div id="texto">
+        passe o mouse aqui
+        <p>testo escondido</p>
+    </div>
+
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.google.com.br/" target="_blank">Google</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Curso em Video</a></li>
+    </ul>
+
+</body>
+</html>
