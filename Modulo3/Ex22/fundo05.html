@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ultima aula de fundo</title>
+    <style>
+
+        /*para alinhar caixas verticalmente 
+        usa-se o position da caixa de fora 
+        como relative e a caixa de dentro 
+        como absolute e dai mexo na direção 
+        e no transform da caixa para centralizar 
+        ela.
+        */
+        #conteiner{
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: yellow;
+            background-image: url(../Imagens/target001.png);
+            background-size: 100% 100%;
+        }
+
+        #conteudo{
+            background-image: url(../Imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            background-color: purple;
+            width: 400px;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50% );
+
+        }
+    </style>
+</head>
+<body>
+
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
