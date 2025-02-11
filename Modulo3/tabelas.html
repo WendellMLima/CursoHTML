@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        table{
+            border: 3px solid black;
+            width: 200px;
+            padding: 8px;
+            border-collapse: collapse;
+            height: 500px;
+            margin-bottom: 50px;
+        }
+        tr{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: top;
+        }
+        th{
+            border: 1px solid black;
+        }
+
+        #tabela{
+            width: 150px;
+            height: 40px;
+        }
+        .cabecalho, tfoot{
+            background-color: darkgray;
+            color: white;
+            height: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Primeira tabela</h1>
+    <table>
+        <tr> <!--primeira linha-->
+            <td>A1</td> <!--dados da tabela-->
+            <td>B1</td> <!--dados da tabela-->
+            <td>C1</td> <!--dados da tabela-->
+        </tr>
+        <tr> <!--segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr><!--terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr><!--quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+
+    <table id="tabela">
+
+        <caption>população dos estados</caption>
+        <thead class="cabecalho">
+            <tr class="cabecalho">
+                <th scope="col">estado</th> <!--titulo de coluna-->
+                <th scope="col">população</th> <!--titulo de coluna-->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>12,3343,4545</td>
+            </tr>
+
+            <tr>
+                <td>minas gerais</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>rio de janeiro</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>lagoas</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>rio grande do sul</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>bahia</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>brasilia</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>natal</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>amazonas</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>roraima</td>
+                <td>123,345,354</td>
+            </tr>
+
+            
+        </tbody>
+
+        <tfoot>
+            <th scope="row">total de população</th> <!--titulo de linha-->
+            <td><strong>987,234,555</strong></td>
+        </tfoot>
+    </table>
+
+
+
+    
+</body>
+</html>

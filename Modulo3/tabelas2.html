@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+
+    <style>
+        table{
+            border: 3px solid black;
+            width: 400px;
+            padding: 8px;
+            border-collapse: collapse;
+            height: 1000px;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        table .menor{
+            width: 100px;
+        }
+
+        tr{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: top;
+        }
+        th{
+            border: 1px solid black;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: darkgray;
+        }
+
+        thead, tfoot{
+            background-color: darkgray;
+            color: white;
+            height: 30px;
+
+        }
+
+        tbody tr:nth-child(2n){ /*odd, even, 2n-1*/
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <caption>população dos estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">estado</th> <!--titulo de coluna-->
+                <th scope="col" class="menor">população</th> <!--titulo de coluna-->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>12,3343,4545</td>
+            </tr>
+
+            <tr>
+                <td>minas gerais</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>rio de janeiro</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>lagoas</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>rio grande do sul</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>bahia</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>brasilia</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>natal</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>amazonas</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>roraima</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td>12,3343,4545</td>
+            </tr>
+
+            <tr>
+                <td>minas gerais</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>rio de janeiro</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>lagoas</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>rio grande do sul</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>bahia</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>brasilia</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>natal</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>amazonas</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>roraima</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>rio de janeiro</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>lagoas</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>ceara</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>rio grande do sul</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>bahia</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>brasilia</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>natal</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>amazonas</td>
+                <td>123,345,354</td>
+            </tr>
+
+            <tr>
+                <td>roraima</td>
+                <td>123,345,354</td>
+            </tr>
+
+
+            
+        </tbody>
+
+        <tfoot>
+            <th scope="row">total de população</th> <!--titulo de linha-->
+            <td><strong>987,234,555</strong></td>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque sint sed assumenda harum hic. Aliquam accusamus consectetur dolore quasi libero non incidunt aliquid praesentium et, voluptatum repellendus harum similique.</p>
+</p>
+    
+</body>
+</html>
