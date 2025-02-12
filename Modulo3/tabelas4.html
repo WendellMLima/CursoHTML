@@ -17,19 +17,38 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        .cnome{
+            background-color: yellow;
+        }
+
+        .cgrupo{
+            background-color: red;
+        }
+
+        .cfilmes{
+            background-color: greenyellow;
+        }
     </style>
 </head>
 <body>
 
     <table>
+
+        <colgroup> <!--para editar as colunas-->
+            <col class="cgrupo">
+            <col class="cnome">
+            <col class="cfilmes" span="3">
+            
+        </colgroup>
         <thea>
-            <th>Grupo</th>
-            <th>nomes</th>
-            <th colspan="3">filmes</th>
+            <th scope="col">Grupo</th>
+            <th scope="col">nomes</th>
+            <th colspan="3" scope="colgroup">filmes</th>
         </thea>
 
         <tbody>
-            <th rowspan="4">mulheres</th>
+            <th rowspan="4" scope="rowgroup">mulheres</th>
 
             <tr>
                 <td>Ana Maria</td>
@@ -51,7 +70,7 @@
                 <td>batman</td>
             </tr>
 
-            <th rowspan="4">Homens</th>
+            <th rowspan="4" scope="rowgroup">Homens</th>
 
             <tr>
                 <td>Bruno mendonça</td>
