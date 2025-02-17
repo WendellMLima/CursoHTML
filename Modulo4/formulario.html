@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <h1>Primeiro formulario</h1> <!--action é pra onde vai os dados cadastrados (no exemplo pra uma pasta de cadastro.php)-->
+    <form method="post" action="cadastro.php"> <!--metodo padrão é get mas existo o post que envia os dados de outra forma-->
+        <!--metodo get usase quando os dados não são sensiveis (dados pessoais) usasse o post quando são dados pessoais de cadastramento-->
+        <p><label for="inome">
+            Nome:
+        </label> 
+            <input type="text" name="nome" id="inome" autocomplete="off"></p> <!--name util para html e php e id util para java script ou alguma outra linguagem-->
+        <p><label for="iSobrenome">
+            Sobrenome:
+        </label> 
+            <input type="text" name="Sobrenome" id="iSobrenome"></p>
+        <p><input type="submit" value="enviar"></p>
+    </form>
+    
+</body>
+</html>
