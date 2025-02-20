@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Menu Rsponsivo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html, body{
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: rgb(137, 137, 137);
+            
+        }
+
+        header h1{
+            text-align: center;
+            padding: 10px;
+        }
+
+        header ul{
+            list-style-type: none;
+
+        }
+
+        ul{
+            display: none;
+        }
+
+        ul > li > a {
+            color: white;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            background-color: rgb(65, 65, 65);
+            border: 2px solid gray;
+
+        }
+
+        #burguer{
+            background-color: rgb(65, 65, 65);
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #burguer:hover{
+            background-color: rgba(98, 98, 98, 0.652);
+        }
+
+        ul > li > a:hover{
+            background-color: rgba(98, 98, 98, 0.652);
+
+        }
+
+        main{
+            max-width: 900px;
+            background-color: white;
+            margin: auto;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        article h2{
+            padding-bottom: 20px;
+        }
+
+        article p {
+            text-align: justify;
+            margin-bottom: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+            <h1>Meu site</h1>
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+                menu
+                </span>
+            
+                <ul id="item">
+                    <li> <a href="#">Opção 1</a></li>
+                    <li> <a href="#">Opção 2</a></li>
+                    <li> <a href="#">Opção 3</a></li>
+                    <li> <a href="#">Opção 4</a></li>
+                    <li> <a href="#">Opção 5</a></li>
+                </ul>
+            
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando media Query</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam corrupti, in sed aliquid expedita accusamus perspiciatis aspernatur molestiae distinctio adipisci rerum veniam quidem ab. Quibusdam, expedita! Sunt est eum consequatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quod, architecto quis voluptatum at modi, magnam in obcaecati tempora dolorum hic aut molestiae saepe sed maxime sunt vel quae repellat?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quod, architecto quis voluptatum at modi, magnam in obcaecati tempora dolorum hic aut molestiae saepe sed maxime sunt vel quae repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias expedita facere alias provident quibusdam labore tenetur vel incidunt ipsum esse temporibus quis, quia aliquid, voluptates ratione cumque fugiat obcaecati enim? </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vero, fuga esse nostrum temporibus, amet reiciendis ipsam et, earum voluptatem porro quas cum maiores distinctio nesciunt perferendis error nam eos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quod, architecto quis voluptatum at modi, magnam in obcaecati tempora dolorum hic aut molestiae saepe sed maxime sunt vel quae repellat?  </p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu(){
+            if(item.style.display == 'block'){
+                item.style.display = 'none' 
+            }
+            else{
+                item.style.display = 'block'
+            }
+            
+        }
+    </script>
+</body>
+</html>

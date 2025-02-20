@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/*todas as demais midias*/
+
+/*typical device breackpoint
+celular:600px 768px
+tablet: 768px 992px
+desktop: 992px 1200px
+tv: acima de 1200px
+
+
+*/
+
+@media print{
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: 2px 2px 0px black;
+        font-size: 18px;
+        
+
+    }
+
+    html{
+        border: 5px solid black;
+    }
+
+    #cel{display: none;}
+    #pc{display: none;}
+    #imp{display: block;}
+    #tv{display: none;}
+    #tab{display: none;}
+
+    main{
+        border: 5px solid black;
+        padding: 10px;
+        
+    }
+
+    main::after{
+        content: 'Esse modo não é possivel ver o background';
+        border-top: 2px solid black;
+    }
+}
+
+/*tablet*/
+@media screen and (min-width: 600px) and (max-width: 970px){
+    body{
+        background-image: url('../imagem/back-tablet.jpg');
+    }
+
+    #cel{display: none;}
+    #pc{display: none;}
+    #imp{display: none;}
+    #tv{display: none;}
+    #tab{display: block;}
+
+}
+
+/*pc*/
+
+@media screen and (min-width: 970px) and ( max-width: 1200px ){
+    body{
+        background-image: url('../imagem/back-pc.jpg');
+    }
+
+    #cel{display: none;}
+    #pc{display: block;}
+    #imp{display: none;}
+    #tv{display: none;}
+    #tab{display: none;}
+
+}
+@media screen and (min-width: 1200px ) {
+
+    body{
+        background-image: url('../imagem/back-tv.jpg');
+    }
+
+    #cel{display: none;}
+    #pc{display: none;}
+    #imp{display: none;}
+    #tv{display: block;}
+    #tab{display: none;}
+
+}
