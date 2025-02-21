@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*todas as demais midias*/
+
+/*typical device breackpoint
+celular:600px 768px
+tablet: 768px 992px
+desktop: 992px 1200px
+tv: acima de 1200px
+
+
+*/
+
+@media screen and (min-width: 768px){
+    ul{
+        display: block;
+    }
+
+    #burguer{
+        display: none;
+    }
+
+    ul > li{
+        display: inline-block;
+    }
+}
