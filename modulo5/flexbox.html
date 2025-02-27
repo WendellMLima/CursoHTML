@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo sobre flex box</title>
+    <style>
+        div.conteiner{
+            background-color: salmon;
+            display: flex; /*configuração somente no pai*/
+            flex-flow: row wrap;
+            padding: 5px;
+            height: 500px;            
+            /*flex-flow: row wrap = shorthand*/
+
+            justify-content: space-evenly ;
+            align-items: flex-start;
+            
+        }
+
+        div.item{
+            background-color: blue;
+            border: 2px solid black;
+            padding: 8px;
+            
+
+            
+            
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!--configuração padrão do conteiner:
+    padrão = display-direction: row; da esquerda pra direita
+    flex-direction: row-reverse; da direita pra esquerda
+    flex-direction: column; em pé de cima pra baixo
+    flex-direction: column-reverse; de baixo para cima
+    -->
+
+    <!--eixos: flex-direction: row; 
+    padrão: main-axis; da esqurda pra direita
+    cross-axis; de cima pra baixo
+
+    row-reverse: se inverte a direção do main-axis
+    mas o croos permanece o mesmo
+
+    flex-direction: column;
+    main-axis fica de cima pra baixo
+    o cross-axis vai da esquerda pra direita deitado
+
+    flex-direction: column-reverse;
+    main-axis fica de baixo pra cima
+    o cross-axis vai da esquerda pra direita deitado
+    
+    -->
+
+    <!--Flex-wrap:
+    padrão: flex-wrap: nowrap; não quebra os blocos
+    flex-wrap: wrap; quebra o ultimo bloco para baixo ou sentido do cross-exis
+    flex-wrap: wrap-reverse; o ultimo bloco vai pra cima ou sentido oposto do cross-exis
+    -->
+
+    <!--justify-content = faz o alinhamento de acordo com o main-axis 
+    justify-content: flex-start; o primero item fica grudado no main-start
+    justify-content: flex-end; o primrito item vai grudar no main-end
+    justify-content: center; vai colocar os itens juntos no meio
+
+    justify-content: space-batween; coloca o primeiro item no main-start e o ultimo no main-end os outros ficam no meio
+    justify-content: space-evenly; coloca eles de forma distribuida dentro do conteiner com o memo espaçamento
+    justify-content: space-around; cria um espaço dentro do conteiner e centraliza os elementos dentro desse espaço
+    -->
+
+    <!--align items = sempre no sentido do cross-axis
+    align-items: stretch; por padrão estica o item no sentido do cross-axis
+    align-items: flex-start: cola o item no inicio do cross-start
+    align-items: flex-end: cola o item no final do cross-start 
+    align-items: center; coloca ele no meio do cross-axis
+    -->
+
+
+
+
+     <div class="conteiner">
+         <div class="item"> A</div>
+         <div class="item"> B</div>
+         <div class="item"> C</div>
+         <div class="item"> D</div>
+         <div class="item">E</div>
+         <div class="item">F</div>
+         
+        
+    </div>
+    
+</body>
+</html>    
