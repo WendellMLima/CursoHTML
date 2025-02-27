@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+@media screen and (min-width: 768px){
+    section#login{
+        width: 50vw;
+        display: inline-block;
+    }
+
+    
+
+    section#login > div#imagem{
+        float: right;
+        height:100%;
+        width: 30%;
+    }
+
+    section#login > div#formulario{
+        float: left;
+        width: 70%;
+    }
+
+    body{
+        background-image:linear-gradient(to bottom, rgba(39, 48, 95, 0.737),  rgba(57, 78, 182, 0.733)) ;
+    }
+
+    form > input[type=submit]{
+        height: 50px;
+        width: 50%;
+        margin-top: 15px;
+        
+    }
+
+    form > div.campo > input{
+        width: 70%;
+        padding: 3px;
+        width: calc(100% - 55px);
+    }
+}
